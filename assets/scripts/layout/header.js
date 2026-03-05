@@ -1,0 +1,29 @@
+import { create } from '../utils/create.js';
+import { set } from '../utils/set.js';
+
+import { navbar } from '../components/Navbar.js';
+import { search } from '../components/search.js';
+
+export function header(targetElement) {
+
+    const header = create('header')
+    header.classList = 'bg-customGrey h-50 w-full p-2 .md:flex-row-reverse'
+
+    const container = create('div')
+    container.classList = 'flex-row gap-22'
+
+    const headerLogo = create('img')
+    headerLogo.src = 'assets/images/svg/Kryb-Logo-Black.svg'
+    headerLogo.classList = 'w-64 place-self-center justify-center'
+
+
+    set([headerLogo, search()], container)
+    set([container, navbar()], header)
+
+    return header
+
+}
+
+
+
+

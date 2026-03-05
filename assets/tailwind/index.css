@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-customBlack: #000;
+  --color-customGrey: #e3e3e3;
+  --color-customWhite: #fff;
+  --font-customGoogleFont: "Roboto", sans-serif;
+  --font-customH1:  
+;
+}
+
+@layer base {
+  h1 {
+    @apply mt-20 mb-10 text-5xl font-bold uppercase text-center;
+  }
+  /* produktoverskrift og pris */
+  h2 {
+    @apply text-lg font-bold uppercase mt-3;
+  }
+h3 {
+    @apply text-lg py-2;
+  }
+  
+  /* lille fedt tekst */
+  h4 {
+    @apply text-sm font-bold uppercase;
+  }
+  p{
+    @apply text-base py-2
+  }
+  span{
+    @apply text-base uppercase font-bold
+  }
+  
+}
