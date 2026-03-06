@@ -13,15 +13,6 @@ export function opskrifter() {
     const headline = create('h1')
     headline.textContent = 'OPSKRIFTER'
 
-    const images = [
-        'assets/images/Uploads/Recipe-01.jpg',
-        'assets/images/Uploads/Recipe-02.jpg',
-        'assets/images/Uploads/Recipe-03.jpg',
-        'assets/images/Uploads/Recipe-04.jpg',
-        'assets/images/Uploads/Recipe-05.jpg',
-        'assets/images/Uploads/Recipe-06.jpg'
-    ]
-
     const prevBtn = create('button')
     prevBtn.textContent = '<'
     prevBtn.classList = 'hidden lg:block absolute left-16 mr-1 top-1/2 rounded-full bg-customGrey p-3 pl-5 pr-5'
@@ -41,13 +32,13 @@ export function opskrifter() {
         track.style.transform = `translateX(-${current * 100 / visible}%)`
     })
     prevBtn.addEventListener('click', () => {
-        current = (current - + (total - visible + 1)) % (total - visible + 1)
+        current = (current - 1 + (total - visible + 1)) % (total - visible + 1)
         let track = get('#sliderTrack')
         track.style.transform = `translateX(-${current * 100 / visible}%`
     })
 
 
 
-    set([headline, prevBtn, slider(images), nextBtn], opskrifter)
+    set([headline, prevBtn, slider(), nextBtn], opskrifter)
     return opskrifter
 }

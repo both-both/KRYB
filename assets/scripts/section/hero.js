@@ -1,7 +1,7 @@
 import { create } from '../utils/create.js';
 import { set } from '../utils/set.js';
-import heroImg from '../../images/Uploads/hero.jpg'
-import heroLogoImg from '../../images/Uploads/logo.png'
+import heroImg from '../../images/hero.jpg'
+import heroLogoImg from '../../images/logo.png'
 
 
 export function hero() {

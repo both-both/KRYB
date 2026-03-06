@@ -2,7 +2,7 @@ import { recipeData } from '../data/recipeData.js'
 import { create } from '../utils/create'
 import { set } from '../utils/set.js'
 
-export function slider(images) {
+export function slider() {
     const slider = create('div')
     slider.classList = 'relative overflow-hidden sm:w-4/5 md:w-4/5 lg:w-4/6 m-auto'
 

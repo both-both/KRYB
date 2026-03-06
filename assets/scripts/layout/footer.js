@@ -1,5 +1,9 @@
 import { create } from "../utils/create";
 import { set } from "../utils/set";
+import inIconImg from "../../images/svg/Sm-Linkedin.svg";
+import igIconImg from '../../images/svg/Sm-LinkedIn.svg'
+import fbIconImg from "../../images/svg/Sm-Facebook.svg";
+import ytIconImg from "../../images/svg/Sm-Youtube.svg";
 
 
 export function footer() {
@@ -10,17 +14,17 @@ export function footer() {
     socials.classList = 'flex justify-center m-auto gap-5'
 
     const inIcon = create('img')
-    inIcon.src = 'assets/images/svg/Sm-Linkedin.svg'
+    inIcon.src = inIconImg
     inIcon.classList = 'w-8'
 
     const igIcon = create('img')
-    igIcon.src = 'assets/images/svg/Sm-Istagram.svg'
+    igIcon.src = igIconImg
     igIcon.classList = 'w-8'
     const fbIcon = create('img')
-    fbIcon.src = 'assets/images/svg/Sm-Facebook.svg'
+    fbIcon.src = fbIconImg
     fbIcon.classList = 'w-8'
     const ytIcon = create('img')
-    ytIcon.src = 'assets/images/svg/Sm-Youtube.svg'
+    ytIcon.src = ytIconImg
     ytIcon.classList = 'w-8'
     set([inIcon, igIcon, fbIcon, ytIcon], socials)
 
