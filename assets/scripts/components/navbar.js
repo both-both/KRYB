@@ -1,7 +1,7 @@
 import { create } from '../utils/create.js';
 import { get } from "../utils/get.js";
 import { set } from "../utils/set.js";
-import shopImg from '../../images/svg/Icon-Search.svg'
+import shopImg from '../../images/svg/Icon-Basket.svg'
 
 export function navbar() {
     const navbar = create('div')
