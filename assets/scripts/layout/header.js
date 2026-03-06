@@ -1,5 +1,6 @@
 import { create } from '../utils/create.js';
 import { set } from '../utils/set.js';
+import headerLogoImg from '../../images/svg//Kryb-Logo-Black.svg'
 
 import { navbar } from '../components/navbar.js';
 import { search } from '../components/search.js';
@@ -13,7 +14,7 @@ export function header(targetElement) {
     container.classList = 'flex content-center'
 
     const headerLogo = create('img')
-    headerLogo.src = 'assets/images/svg/Kryb-Logo-Black.svg'
+    headerLogo.src = headerLogoImg;
     headerLogo.classList = 'w-64 place-self-center'
 
     set([search(), headerLogo], container)
