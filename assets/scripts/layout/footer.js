@@ -4,6 +4,7 @@ import inIconImg from "../../images/svg/Sm-Linkedin.svg";
 import igIconImg from "../../images/svg/Sm-Istagram.svg";
 import fbIconImg from "../../images/svg/Sm-Facebook.svg";
 import ytIconImg from "../../images/svg/Sm-Youtube.svg";
+import logoImg from "../../images/svg/Kryb-Logo-Black.svg";
 
 
 export function footer() {
@@ -29,7 +30,7 @@ export function footer() {
     set([inIcon, igIcon, fbIcon, ytIcon], socials)
 
     const logo = create('img')
-    logo.src = 'assets/images/svg/Kryb-Logo-Black.svg'
+    logo.src = logoImg
     logo.classList = 'w-38 pt-8 pb-8 m-auto'
 
     const footerText = create('div')
