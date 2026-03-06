@@ -1,7 +1,7 @@
 import { create } from '../utils/create.js';
 import { get } from "../utils/get.js";
 import { set } from "../utils/set.js";
-import shopIcon from '../../images/svg/Icon-Search.js'
+import shopImg from '../../images/svg/Icon-Search.svg'
 
 export function navbar() {
     const navbar = create('div')
@@ -21,7 +21,7 @@ export function navbar() {
     })
     const shop = create('div')
     const shopIcon = create('img')
-    shopIcon.src = shopIcon;
+    shopIcon.src = shopImg;
     shopIcon.classList = 'h-5 '
     const shopText = create('p')
     shopText.textContent = '(0)'
