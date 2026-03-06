@@ -3,6 +3,7 @@ import { set } from "../utils/set"
 import { productData } from '../data/productData.js'
 import { button } from "../components/button.js"
 
+
 export function products() {
     const products = create('section')
     products.classList = 'max-w-4/5 m-auto'
