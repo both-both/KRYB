@@ -3,12 +3,13 @@ import { set } from "../utils/set"
 
 
 export function omkryb() {
-    const omkryb = create('div')
+    const omkryb = create('section')
     omkryb.classList = 'max-w-4/5 m-auto'
+    
     const headline = create('h1')
     headline.textContent = 'Om Kryb'
     headline.classList = 'text-center'
-    set([headline], omkryb)
+    set(headline, omkryb)
 
     const aboutContent = create('div')
     aboutContent.classList = 'lg:flex lg:gap-8 max-w-4/5 m-auto '
@@ -28,7 +29,7 @@ export function omkryb() {
 
     const aboutImg = create('img')
     aboutImg.src = 'assets/images/About-KRYB.jpg'
-    aboutImg.classList = 'lg:w-6/12'
+    aboutImg.classList = 'md:w-full lg:w-1/2 object-cover'
 
     set([aboutText, aboutImg], aboutContent)
     set([headline, aboutContent], omkryb)

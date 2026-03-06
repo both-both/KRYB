@@ -2,11 +2,12 @@ import { create } from "../utils/create"
 import { set } from "../utils/set.js"
 import { get } from "../utils/get.js"
 import { slider } from "../components/slider.js"
+import { recipeData } from '../data/recipeData.js'
 
 
 export function opskrifter() {
     const opskrifter = create('div')
-    opskrifter.classList = 'pb-40 relative'
+    opskrifter.classList = 'relative'
 
     const headline = create('h1')
     headline.textContent = 'OPSKRIFTER'
@@ -22,24 +23,26 @@ export function opskrifter() {
 
     const prevBtn = create('button')
     prevBtn.textContent = '<'
-    prevBtn.classList = 'absolute left-16 mr-1 top-1/2 rounded-full bg-customGrey p-3 pl-5 pr-5'
+    prevBtn.classList = 'hidden lg:block absolute left-16 mr-1 top-1/2 rounded-full bg-customGrey p-3 pl-5 pr-5'
 
     const nextBtn = create('button')
     nextBtn.textContent = '>'
-    nextBtn.classList = 'absolute right-16 ml-1 top-1/2 rounded-full bg-customGrey p-3 pl-5 pr-5'
-
+    nextBtn.classList = 'hidden lg:block absolute right-16 ml-1 top-1/2 rounded-full bg-customGrey p-3 pl-5 pr-5'
 
     let current = 0
+    const total = recipeData.length
+    const visible = 3
+
 
     nextBtn.addEventListener('click', () => {
-        current = (current + 1) % images.length
+        current = (current + 1) % (total - visible + 1)
         let track = get('#sliderTrack')
-        track.style.transform = `translateX(-${current * 100 / 3}%)`
+        track.style.transform = `translateX(-${current * 100 / visible}%)`
     })
     prevBtn.addEventListener('click', () => {
-        current = (current - 1 + images.length) % images.length
+        current = (current - + (total - visible + 1)) % (total - visible + 1)
         let track = get('#sliderTrack')
-        track.style.transform = `translateX(-${current * 100 / 3})`
+        track.style.transform = `translateX(-${current * 100 / visible}%`
     })
 
 
