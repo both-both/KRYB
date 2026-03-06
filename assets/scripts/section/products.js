@@ -12,7 +12,7 @@ export function products() {
     set([headline], products)
 
     const productCards = create('div')
-    productCards.classList = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+    productCards.classList = 'text-center mb-10 m-auto max-w-4/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
 
     productData.forEach(product => {
         const productCard = create('div')
@@ -22,8 +22,9 @@ export function products() {
         <p>${product.description}</p>
         <h2>${product.price}</h2>`;
         const btn = button('læg i kurv')
-        productCard.classList = 'text-center mb-10 m-auto'
-        set([productCard, btn], productCards)
+        productCard.classList = 'text-center mb-10'
+        set(btn, productCard)
+        set(productCard, productCards)
         set(productCards, products)
 
     })
