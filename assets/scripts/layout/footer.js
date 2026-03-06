@@ -1,7 +1,7 @@
 import { create } from "../utils/create";
 import { set } from "../utils/set";
 import inIconImg from "../../images/svg/Sm-Linkedin.svg";
-import igIconImg from '../../images/svg/Sm-Instagram.svg';
+import igIconImg from "../../images/svg/Sm-Istagram.svg";
 import fbIconImg from "../../images/svg/Sm-Facebook.svg";
 import ytIconImg from "../../images/svg/Sm-Youtube.svg";
 
