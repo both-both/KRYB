@@ -1,9 +1,9 @@
-import image1 from '../../assets/images/Uploads/product-One.jpg'
-import image2 from '../../assets/images/Uploads/product-Two.jpg'
-import image3 from '../../assets/images/Uploads/product-Three.jpg'
-import image4 from '../../assets/images/Uploads/product-Four.jpg'
-import image5 from '../../assets/images/Uploads/product-Five.jpg'
-import image6 from '../../assets/images/Uploads/product-Six.jpg'
+import image1 from '../../images/Uploads/Product-One.jpg'
+import image2 from '../../images/Uploads/Product-Two.jpg'
+import image3 from '../../images/Uploads/Product-Three.jpg'
+import image4 from '../../images/Uploads/Product-Four.jpg'
+import image5 from '../../images/Uploads/Product-Five.jpg'
+import image6 from '../../images/Uploads/Product-Six.jpg'
 
 export const productData = [
     {
