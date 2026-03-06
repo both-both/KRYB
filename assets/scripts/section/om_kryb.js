@@ -1,11 +1,12 @@
 import { create } from "../utils/create"
 import { set } from "../utils/set"
+import aboutKrybImg from '../../images/About-KRYB.jpg'
 
 
 export function omkryb() {
     const omkryb = create('section')
     omkryb.classList = 'max-w-4/5 m-auto'
-    
+
     const headline = create('h1')
     headline.textContent = 'Om Kryb'
     headline.classList = 'text-center'
@@ -28,7 +29,7 @@ export function omkryb() {
     aboutText.classList = 'text-left'
 
     const aboutImg = create('img')
-    aboutImg.src = 'assets/images/About-KRYB.jpg'
+    aboutImg.src = aboutKrybImg;
     aboutImg.classList = 'md:w-full lg:w-1/2 object-cover'
 
     set([aboutText, aboutImg], aboutContent)

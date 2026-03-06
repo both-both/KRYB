@@ -5,6 +5,7 @@ import { slider } from "../components/slider.js"
 import { recipeData } from '../data/recipeData.js'
 
 
+
 export function opskrifter() {
     const opskrifter = create('div')
     opskrifter.classList = 'relative'
