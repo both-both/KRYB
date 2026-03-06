@@ -1,7 +1,7 @@
 import { create } from '../utils/create.js';
 import { set } from '../utils/set.js';
 
-import { navbar } from '../components/Navbar.js';
+import { navbar } from '../components/navbar.js';
 import { search } from '../components/search.js';
 
 export function header(targetElement) {
@@ -10,14 +10,13 @@ export function header(targetElement) {
     header.classList = 'bg-customGrey h-50 w-full p-2 .md:flex-row-reverse'
 
     const container = create('div')
-    container.classList = 'flex-row gap-22'
+    container.classList = 'flex content-center'
 
     const headerLogo = create('img')
     headerLogo.src = 'assets/images/svg/Kryb-Logo-Black.svg'
-    headerLogo.classList = 'w-64 place-self-center justify-center'
+    headerLogo.classList = 'w-64 place-self-center'
 
-
-    set([headerLogo, search()], container)
+    set([search(), headerLogo], container)
     set([container, navbar()], header)
 
     return header
